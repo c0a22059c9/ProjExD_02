@@ -18,6 +18,7 @@ def main():
     bd_rct = bd_img.get_rect()  # 練習１：SurfaceからRectを抽出する
     x, y = random.randint(0, WIDTH), random.randint(0, HEIGHT)
     bd_rct.center = (x, y)  # 練習１：Rectにランダムな座標を設定する
+    vx, vy = +5, +5  # 練習２：爆弾の速度
 
     clock = pg.time.Clock()
     tmr = 0
@@ -28,6 +29,7 @@ def main():
 
         screen.blit(bg_img, [0, 0])
         screen.blit(kk_img, [900, 400])
+        bd_rct.move_ip(vx, vy)  # 練習２：爆弾を移動させる
         screen.blit(bd_img, bd_rct)  # 練習１：Rectを使って試しにblit
         pg.display.update()
         tmr += 1
