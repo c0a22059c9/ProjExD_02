@@ -53,8 +53,8 @@ def main():
     bd_rct = bd_img.get_rect()  # 練習１：SurfaceからRectを抽出する
     x, y = random.randint(0, WIDTH), random.randint(0, HEIGHT)
     bd_rct.center = (x, y)  # 練習１：Rectにランダムな座標を設定する
-    for i in range (1,6):
-        avx = 1*i
+    for i in range (1,6,1):
+        avx = 1*i #ばくだんの速度を変化させる為にiを１づつ増加させ速度を変化させる変数avxとavyを作成
         avy = 1*i
         if avx == 100000:
             i = 1
