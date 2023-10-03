@@ -23,6 +23,8 @@ def main():
         pg.display.update()
         tmr += 1
         clock.tick(10)
+"aiueo"
+
 
 
 if __name__ == "__main__":
