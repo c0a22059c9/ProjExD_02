@@ -12,7 +12,7 @@ delta ={
     pg.K_RIGHT:(+5,0),
 }
 
-def check_bound(area:pg.rect,obj_rct: pg.Rect) ->tuple[bool,bool]:
+def check_bound(obj_rct: pg.Rect):
     """
     引数：こうかとんRectかばくだんRect
     戻り値：タプル（横方向判定結果，縦方向判定結果）
@@ -53,7 +53,7 @@ def main():
     bd_rct = bd_img.get_rect()  # 練習１：SurfaceからRectを抽出する
     x, y = random.randint(0, WIDTH), random.randint(0, HEIGHT)
     bd_rct.center = (x, y)  # 練習１：Rectにランダムな座標を設定する
-    for i in range (1,60):
+    for i in range (1,6):
         avx = 1*i
         avy = 1*i
         if avx == 100000:
