@@ -12,7 +12,7 @@ delta ={
     pg.K_RIGHT:(+5,0),
 }
 
-def check_bound(obj_rct: pg.Rect):
+def check_bound(area:pg.rect,obj_rct: pg.Rect) ->tuple[bool,bool]:
     """
     引数：こうかとんRectかばくだんRect
     戻り値：タプル（横方向判定結果，縦方向判定結果）
