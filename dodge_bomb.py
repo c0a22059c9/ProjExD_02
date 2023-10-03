@@ -52,6 +52,7 @@ def main():
                 return
             
         if kk_rct.colliderect(bd_rct):#練習５衝突判定
+            print("Game Over")
             return
             
         screen.blit(bg_img, [0, 0])
